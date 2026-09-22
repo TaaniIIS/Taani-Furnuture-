@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Taani Furniture | Hargeysa</title>
+    <meta
+      name="description"
+      content="Taani Furniture is a modern furniture business in Hargeysa, offering sofas, beds, tables, chairs, wardrobes, and office furniture with demo products and quote requests."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+    <script defer src="script.js"></script>
+  </head>
+  <body>
+    <div class="topbar">
+      <div class="container topbar-inner">
+        <span data-i18n="topbarText">Hargeysa • Taani Furniture • USD</span>
+        <div class="topbar-links">
+          <a href="tel:+2524669358">4669358</a>
+          <a href="https://wa.me/2524669358" target="_blank" rel="noreferrer">WhatsApp</a>
+        </div>
+      </div>
+    </div>
+
+    <header class="site-header">
+      <div class="container nav-wrap">
+        <a class="brand" href="#home" aria-label="Taani Furniture home">
+          <span class="brand-mark">T</span>
+          <span class="brand-copy">
+            <strong data-i18n="brandTitle">TAANI</strong>
+            <small data-i18n="brandSubtitle">Furniture</small>
+          </span>
+        </a>
+
+        <nav class="main-nav" aria-label="Main navigation">
+          <a href="#home" data-i18n="navHome">Home</a>
+          <a href="#categories" data-i18n="navCategories">Categories</a>
+          <a href="#products" data-i18n="navProducts">Products</a>
+          <a href="#gallery" data-i18n="navGallery">Gallery</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </nav>
+
+        <div class="nav-actions" aria-label="Language switcher">
+          <button class="lang-btn active" type="button" data-lang="en">EN</button>
+          <button class="lang-btn" type="button" data-lang="so">SO</button>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <p class="eyebrow" data-i18n="eyebrow">Furniture for everyday living</p>
+            <h1 data-i18n="heroTitle">Comfortable furniture for homes, offices, and hospitality spaces.</h1>
+            <p class="lead" data-i18n="heroText">
+              Discover quality furniture pieces designed to make every room more welcoming,
+              functional, and comfortable.
+            </p>
+            <div class="cta-row">
+              <a href="#products" class="btn btn-primary" data-i18n="browseCollection">Browse Collection</a>
+              <a href="#contact" class="btn btn-secondary" data-i18n="requestQuote">Request a Quote</a>
+            </div>
+            <ul class="quick-points">
+              <li data-i18n="pointHome">Home and family furniture</li>
+              <li data-i18n="pointOffice">Office and business furniture</li>
+              <li data-i18n="pointHotels">Hotels and hospitality spaces</li>
+            </ul>
+          </div>
+
+          <div class="hero-visual" aria-label="Furniture showroom slideshow">
+            <div class="slideshow" id="heroSlideshow">
+              <article class="slide is-active">
+                <img src="images/bedroom-showcase.png" alt="Luxury bedroom with upholstered headboard" />
+                <div class="slide-caption">
+                  <span class="chip" data-i18n="demoShowcase">Demo showcase</span>
+                  <strong data-i18n="floatingTitle">Warm, modern living spaces</strong>
+                  <small data-i18n="floatingText">Sample product presentation</small>
+                </div>
+              </article>
+              <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=1200&q=80"
+                  alt="Modern sofa setup in a bright living room"
+                />
+                <div class="slide-caption">
+                  <span class="chip" data-i18n="demoShowcase">Demo showcase</span>
+                  <strong data-i18n="floatingTitle">Warm, modern living spaces</strong>
+                  <small data-i18n="floatingText">Sample product presentation</small>
+                </div>
+              </article>
+              <article class="slide">
+                <img
+                  src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=1200&q=80"
+                  alt="Dining room furniture and elegant table"
+                />
+                <div class="slide-caption">
+                  <span class="chip" data-i18n="demoShowcase">Demo showcase</span>
+                  <strong data-i18n="floatingTitle">Warm, modern living spaces</strong>
+                  <small data-i18n="floatingText">Sample product presentation</small>
+                </div>
+              </article>
+            </div>
+
+            <div class="slideshow-controls" aria-label="Slide controls">
+              <button class="slide-btn prev" type="button" aria-label="Previous slide">←</button>
+              <div class="slide-dots" aria-label="Slide indicators">
+                <button class="slide-dot is-active" type="button" data-slide="0" aria-label="Show slide 1"></button>
+                <button class="slide-dot" type="button" data-slide="1" aria-label="Show slide 2"></button>
+                <button class="slide-dot" type="button" data-slide="2" aria-label="Show slide 3"></button>
+              </div>
+              <button class="slide-btn next" type="button" aria-label="Next slide">→</button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="stats" aria-label="Business highlights">
+        <div class="container stats-grid">
+          <article>
+            <strong>4+</strong>
+            <span data-i18n="statCustomerTypes">Customer segments</span>
+          </article>
+          <article>
+            <strong>USD</strong>
+            <span data-i18n="statCurrency">Price in USD</span>
+          </article>
+          <article>
+            <strong>Hargeysa</strong>
+            <span data-i18n="statLocation">Local business</span>
+          </article>
+          <article>
+            <strong>24/7</strong>
+            <span data-i18n="statSupport">Quote support</span>
+          </article>
+        </div>
+      </section>
+
+      <section class="categories section" id="categories">
+        <div class="container">
+          <div class="section-heading">
+            <p class="subheading" data-i18n="categoriesTag">Popular categories</p>
+            <h2 data-i18n="categoriesTitle">Explore our furniture categories</h2>
+          </div>
+
+          <div class="category-grid">
+            <article class="category-card">
+              <div class="icon">🛋️</div>
+              <h3 data-i18n="catSofa">Sofas</h3>
+              <p data-i18n="catSofaDesc">Comfort-first seating for relaxed living rooms and lounges.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">🛏️</div>
+              <h3 data-i18n="catBeds">Beds</h3>
+              <p data-i18n="catBedsDesc">Restful bedroom essentials designed for comfort and style.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">🪵</div>
+              <h3 data-i18n="catTables">Tables</h3>
+              <p data-i18n="catTablesDesc">Dining, coffee, and side tables for everyday use and hosting.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">🪑</div>
+              <h3 data-i18n="catChairs">Chairs</h3>
+              <p data-i18n="catChairsDesc">Versatile seating options for work, dining, and guests.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">🗄️</div>
+              <h3 data-i18n="catWardrobes">Wardrobes</h3>
+              <p data-i18n="catWardrobesDesc">Functional storage solutions for bedrooms and entryways.</p>
+            </article>
+            <article class="category-card">
+              <div class="icon">💼</div>
+              <h3 data-i18n="catOffice">Office Furniture</h3>
+              <p data-i18n="catOfficeDesc">Practical furniture for professional workspaces and teams.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="products section" id="products">
+        <div class="container">
+          <div class="section-heading split">
+            <div>
+              <p class="subheading" data-i18n="productsTag">Featured products</p>
+              <h2 data-i18n="productsTitle">Sample furniture selection</h2>
+            </div>
+            <span class="demo-note" data-i18n="demoLabel">Demo products shown for browsing</span>
+          </div>
+
+          <div class="product-grid" id="productGrid"></div>
+        </div>
+      </section>
+
+      <section class="benefits section">
+        <div class="container">
+          <div class="section-heading">
+            <p class="subheading" data-i18n="benefitsTag">Why choose us</p>
+            <h2 data-i18n="benefitsTitle">Designed around comfort and practicality</h2>
+          </div>
+
+          <div class="benefit-grid">
+            <article class="benefit-card">
+              <div class="icon-wrap">🏡</div>
+              <h3 data-i18n="benefitHome">Home comfort</h3>
+              <p data-i18n="benefitHomeDesc">Furniture that balances warmth, function, and everyday living.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="icon-wrap">🏢</div>
+              <h3 data-i18n="benefitOffice">Business-ready</h3>
+              <p data-i18n="benefitOfficeDesc">Practical layouts and durable pieces for professional spaces.</p>
+            </article>
+            <article class="benefit-card">
+              <div class="icon-wrap">📞</div>
+              <h3 data-i18n="benefitQuote">Easy quote requests</h3>
+              <p data-i18n="benefitQuoteDesc">Tell us what you need and we can help with the right fit.</p>
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section class="gallery section" id="gallery">
+        <div class="container">
+          <div class="section-heading">
+            <p class="subheading" data-i18n="galleryTag">Showroom inspiration</p>
+            <h2 data-i18n="galleryTitle">Furniture gallery</h2>
+          </div>
+
+          <div class="gallery-grid">
+            <img src="https://images.unsplash.com/photo-1494526585095-c41746248156?auto=format&fit=crop&w=900&q=80" alt="Modern bedroom" />
+            <img src="https://images.unsplash.com/photo-1555041469-a586c61ea9bc?auto=format&fit=crop&w=900&q=80" alt="Modern sofa setup" />
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Leather seating arrangement" />
+            <img src="https://images.unsplash.com/photo-1484101403633-562f891dc89a?auto=format&fit=crop&w=900&q=80" alt="Dining room furniture" />
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Contemporary home interior" />
+            <img src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?auto=format&fit=crop&w=900&q=80" alt="Interior design with furniture" />
+          </div>
+        </div>
+      </section>
+
+      <section class="contact section" id="contact">
+        <div class="container contact-grid">
+          <div class="contact-copy">
+            <p class="subheading" data-i18n="contactTag">Contact us</p>
+            <h2 data-i18n="contactTitle">Let’s find the right furniture for your space.</h2>
+            <p data-i18n="contactText">
+              Share your needs and we can help you choose products that fit your rooms, budget,
+              and style.
+            </p>
+
+            <div class="contact-list">
+              <div class="contact-item">
+                <span class="label" data-i18n="labelPhone">Phone</span>
+                <a href="tel:+2524669358">4669358</a>
+              </div>
+              <div class="contact-item">
+                <span class="label" data-i18n="labelWhatsApp">WhatsApp</span>
+                <a href="https://wa.me/2524669358" target="_blank" rel="noreferrer">4669358</a>
+              </div>
+              <div class="contact-item">
+                <span class="label" data-i18n="labelEmail">Email</span>
+                <a href="mailto:solatani@gmail.com">solatani@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <span class="label" data-i18n="labelLocation">Location</span>
+                <span>Hargeysa, Somaliland</span>
+              </div>
+              <div class="contact-item address-item">
+                <span class="label" data-i18n="labelAddress">Exact address</span>
+                <span>[Exact Address to be Added]</span>
+              </div>
+            </div>
+          </div>
+
+          <form class="quote-form" id="quoteForm">
+            <div class="field-row">
+              <label>
+                <span data-i18n="fieldName">Full Name</span>
+                <input type="text" name="name" placeholder="" required />
+              </label>
+            </div>
+
+            <div class="field-row two-col">
+              <label>
+                <span data-i18n="fieldPhone">Phone</span>
+                <input type="tel" name="phone" placeholder="" required />
+              </label>
+              <label>
+                <span data-i18n="fieldEmail">Email</span>
+                <input type="email" name="email" placeholder="" required />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span data-i18n="fieldProduct">Product interest</span>
+                <input type="text" name="product" placeholder="" />
+              </label>
+            </div>
+
+            <div class="field-row">
+              <label>
+                <span data-i18n="fieldMessage">Message</span>
+                <textarea name="message" rows="5" placeholder="" required></textarea>
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-submit" data-i18n="submitButton">Send Request</button>
+            <p class="form-status" id="formStatus" aria-live="polite"></p>
+          </form>
+        </div>
+      </section>
+    </main>
+
+    <footer class="site-footer">
+      <div class="container footer-inner">
+        <div>
+          <div class="brand footer-brand">
+            <span class="brand-mark">T</span>
+            <span class="brand-copy">
+              <strong data-i18n="brandTitle">TAANI</strong>
+              <small data-i18n="brandSubtitle">Furniture</small>
+            </span>
+          </div>
+        </div>
+
+        <div class="footer-links">
+          <a href="#categories" data-i18n="navCategories">Categories</a>
+          <a href="#products" data-i18n="navProducts">Products</a>
+          <a href="#contact" data-i18n="navContact">Contact</a>
+        </div>
+
+        <div class="footer-meta">
+          <a href="tel:+2524669358">4669358</a>
+          <a href="mailto:solatani@gmail.com">solatani@gmail.com</a>
+        </div>
+      </div>
+      <div class="container footer-bottom">
+        <span>© 2026 Taani Furniture</span>
+        <span data-i18n="footerNote">Demo sample content for presentation</span>
+      </div>
+    </footer>
+
+    <a
+      class="whatsapp-float"
+      href="https://wa.me/2524669358?text=Hello%20Taani%20Furniture%2C%20I%20would%20like%20to%20request%20a%20quote."
+      target="_blank"
+      rel="noreferrer"
+      aria-label="Chat on WhatsApp"
+    >
+      WhatsApp
+    </a>
+  </body>
+</html>
