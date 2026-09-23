@@ -26,6 +26,7 @@ const translations = {
     statSupport: 'Quote support',
     categoriesTag: 'Popular categories',
     categoriesTitle: 'Explore our furniture categories',
+    filterAll: 'All Furniture',
     catSofa: 'Sofas',
     catSofaDesc: 'Comfort-first seating for relaxed living rooms and lounges.',
     catBeds: 'Beds',
@@ -96,6 +97,7 @@ const translations = {
     statSupport: 'Taageero qiimo',
     categoriesTag: 'Qaybaha caanka ah',
     categoriesTitle: 'Baro qaybaha alaabta',
+    filterAll: 'Dhammaan Alaabta',
     catSofa: 'Sofaha',
     catSofaDesc: 'Kursi raaxo leh oo loogu talagalay qollada nasashada.',
     catBeds: 'Gogosha',
@@ -199,6 +201,7 @@ const products = [
 ];
 
 const productGrid = document.getElementById('productGrid');
+const filterButtons = document.querySelectorAll('.filter-btn');
 const langButtons = document.querySelectorAll('.lang-btn');
 const form = document.getElementById('quoteForm');
 const formStatus = document.getElementById('formStatus');
@@ -242,8 +245,10 @@ slideDots.forEach((dot) => {
   });
 });
 
-function renderProducts() {
-  productGrid.innerHTML = products
+function renderProducts(category = 'all') {
+  const filteredProducts = category === 'all' ? products : products.filter((product) => product.category === category);
+
+  productGrid.innerHTML = filteredProducts
     .map(
       (product) => `
         <article class="product-card">
@@ -269,6 +274,20 @@ function renderProducts() {
     )
     .join('');
 }
+
+filterButtons.forEach((button) => {
+  button.addEventListener('click', () => {
+    const selectedCategory = button.dataset.category;
+
+    filterButtons.forEach((filterButton) => {
+      const isActive = filterButton === button;
+      filterButton.classList.toggle('active', isActive);
+      filterButton.setAttribute('aria-pressed', String(isActive));
+    });
+
+    renderProducts(selectedCategory);
+  });
+});
 
 function applyLanguage(lang) {
   const keys = translations[lang];
